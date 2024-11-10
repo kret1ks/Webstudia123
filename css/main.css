@@ -22,6 +22,7 @@ outline: 1px solid red;
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
+    
 }
 .header-box{
 display: flex;
