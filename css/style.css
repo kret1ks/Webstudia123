@@ -328,6 +328,46 @@ background-color: var(--main-color);
   line-height: 1.187;
   letter-spacing: 0.48px;
 }
+.team-icon{
+width: 20px;
+height: 20px;
+flex-shrink: 0;
+fill: #757575;
+}
+.team-box{
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-top: 16px;
+}
+.team-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.team-box a:hover {
+  background-color: #2196f3;
+}
+
+.team-box a:hover .team-icon {
+  fill: white;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
