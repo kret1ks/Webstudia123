@@ -15,7 +15,7 @@ body {
 }  
 
 .container {  
-    width: 1200px;  
+    width: 1260px;  
     margin-left: auto;  
     margin-right: auto;  
     padding-left: 15px;  
@@ -32,7 +32,10 @@ body {
     display: flex;  
     align-items: center;  
 }  
-
+.header-link{
+  display: flex;
+  justify-content: center;
+}
 .header-logo {  
     color: var(--accent-color);  
     font-family: Raleway;  
@@ -42,7 +45,9 @@ body {
     letter-spacing: 0.78px;  
     margin-right: 93px;  
 }  
-
+.logo{
+  margin-right: 10px;
+}
 .header-span {  
     color: var(--logo-color);  
     font-family: Raleway;  
@@ -53,21 +58,14 @@ body {
 }  
 
 .header-contact {  
-    display: flex; 
-    justify-content: center; 
-    gap: 10px;
-}  
-
-.header-item {  
-    display: flex;  
-    align-items: center;   
-}   
-
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}    
 .logo {  
     width: 16px;  
     height: 12px;  
-    flex-shrink: 0;  
-    
+    flex-shrink: 0;     
 }  
 
 .header-link {  
@@ -332,7 +330,7 @@ background-color: var(--main-color);
 width: 20px;
 height: 20px;
 flex-shrink: 0;
-fill: #757575;
+fill: darkgrey;
 }
 .team-box{
 display: flex;
@@ -394,7 +392,7 @@ margin-bottom: 50px;
 }
 .client-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -404,14 +402,14 @@ margin-bottom: 50px;
     justify-content: center;
     width: 120px;
     height: 80px;
-    border: 1px solid #757575;
+    border: 1px solid darkgrey;
     border-radius: 4px; 
 }
 
 .client-icon {
     width: 60px;
     height: 60px;
-    fill: #757575;
+    fill: darkgrey;
     transition: fill 0.3s ease;
 }
 
@@ -436,7 +434,7 @@ margin-bottom: 50px;
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
 }
 
