@@ -280,7 +280,7 @@ padding: 10px 32px;
 
 .work-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 30px;
 }
 
