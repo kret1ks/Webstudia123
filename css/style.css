@@ -739,7 +739,6 @@ letter-spacing: 0.48px;
 }
 .modal{
 width: 528px;
-height: 581px;
 flex-shrink: 0;
 border-radius: 4px;
 background: #FFF;
@@ -821,6 +820,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.42px;
+margin-left: 9px;
 }
 .modal-link{
   color: var(--accent-color);
@@ -834,4 +834,26 @@ text-decoration-skip-ink: none;
 text-decoration-thickness: auto;
 text-underline-offset: auto;
 text-underline-position: from-font;
+}
+.modal-chek{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.modal-submit {
+  padding: 10px 52px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+.modal-submit:hover {
+  background-color: #2196F3;
 }
