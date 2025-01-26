@@ -868,14 +868,15 @@ text-underline-position: from-font;
 .modal-submit:hover {
   background-color: #2196F3;
 }
-.modal-svg{
-width: 18px;
-height: 18px;
-position: absolute;
-top: 50%;
-transform: translateY(-60%);
-left: 12px;
-}
+
 .modal-wrap{
   position: relative;
+}
+.modal-svg{
+  width: 18px;
+  height: 18px;
+ position: absolute;
+ top: 50%;
+ left: 12px;
+transform: translateY(-60%);
 }
