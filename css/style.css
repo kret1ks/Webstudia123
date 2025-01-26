@@ -165,21 +165,24 @@ gap: 50px;
   margin-bottom: 30px;
 }
 .hero-button {
-border-radius: 4px;
-background: var(--accent-color);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-color: var(--main-color);
-text-align: center;
-font-size: 16px;
-font-weight: 700;
-line-height: 1.87;
-letter-spacing: 0.96px;
-padding: 10px 32px;
-
-
-
-
+  border-radius: 4px; /* Округлі кути */
+  background: var(--accent-color); /* Синій фон */
+  color: #fff; /* Білий текст */
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  padding: 10px 32px;
+  border: none; /* Без обводки */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Плавний перехід для змін */
 }
+
+
+
+
+
 .management{
   padding-top: 94px;
   
