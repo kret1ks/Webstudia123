@@ -602,6 +602,60 @@ height: 20px;
 flex-shrink: 0;
 fill: white;
 }
+.footer-subscribe {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-subscribe-title {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 4px;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  background-color: #2196F3;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 62px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+ height: 50px;
+
+}
+
+.subscribe-button:hover {
+  background-color: #1976D2;
+}
+
+.subscribe-icon {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  margin-left: 5px;
+}
+
 /* ------------portfolio-------------------------------- */
 
 
