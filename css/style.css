@@ -604,9 +604,13 @@ fill: white;
 }
 .footer-subscribe {
   display: flex;
-  flex-direction: column; /* Розташування елементів у стовпчик */
-  align-items: flex-start; /* Вирівнювання по лівому краю */
-  margin-top: 0; /* Якщо потрібно прибрати зайві відступи */
+  flex-direction: column; 
+  align-items: flex-start;
+  margin-top: 0; 
+}
+.subscribe-form {
+  display: flex;
+  align-items: center; 
 }
 .footer-subscribe-title{
 color: #FFF;
@@ -616,6 +620,7 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 margin-bottom: 20px;
+margin-left: 93px;
 }
 .subscribe-input{
 width: 358px;
