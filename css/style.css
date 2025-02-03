@@ -677,8 +677,24 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+position: relative;
 }
-
+.nav-link::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+ background-color: var(--accent-color);
+  visibility: hidden;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  visibility: visible;
+}
 
 
 .header-list{
