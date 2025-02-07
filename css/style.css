@@ -165,18 +165,18 @@ gap: 50px;
   margin-bottom: 30px;
 }
 .hero-button {
-  border-radius: 4px; /* Округлі кути */
-  background: var(--accent-color); /* Синій фон */
-  color: #fff; /* Білий текст */
+  border-radius: 4px; 
+  background: var(--accent-color);
+  color: #fff; 
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
   padding: 10px 32px;
-  border: none; /* Без обводки */
+  border: none; 
   cursor: pointer;
-  transition: all 0.3s ease; /* Плавний перехід для змін */
+  transition: all 0.3s ease; 
 }
 
 
@@ -395,10 +395,10 @@ margin-top: 16px;
   border-radius: 50%;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-.team-box a:hover {
+/* 
+.table-img:hover {
   background-color: #2196f3;
-}
+} */
 
 .team-box a:hover .team-icon {
   fill: white;
