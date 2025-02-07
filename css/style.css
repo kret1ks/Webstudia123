@@ -901,33 +901,21 @@ font-weight: 400;
 line-height: 1.85;
 letter-spacing: 0.48px;
 }   
-/* .list-text{
+
+.table-item {
+  position: relative;
+  overflow: hidden; 
+}
+.overlay-text {
   width: 322px;
-  color: #000000;
+  color: #FFF;
 font-size: 18px;
 font-weight: 400;
 line-height: 28px;
 letter-spacing: 0.54px;
-z-index: 1;
-position: absolute;
-bottom: 0;
-right: 0;
-} */
-
-
-
-.table-item {
-  position: relative;
-  overflow: hidden;
-}
-.overlay-text {
-  font-size: 16px;
-  line-height: 1.5;
 }
 
-.table-img:hover + .overlay {
-  opacity: 1;
-}
+
 
 .table-img {
   display: block;
@@ -940,26 +928,28 @@ right: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(33, 150, 243, 0.90);
+  background: rgba(33, 150, 243, 0.90); 
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; 
+  opacity: 0; /* Ховаємо */
+  transition: opacity 0.3s ease-in-out; 
+}
+.table-item:hover .overlay {
+  opacity: 1; /* Показуємо при наведенні */
 }
 .overlay-text {  
-width: 322px;
-color: #FFF;
-font-size: 18px;
-font-weight: 400;
-line-height: 28px; 
-letter-spacing: 0.54px;
-padding: 63px 24px;
-}  
+  width: 80%; /* Щоб текст не розтягувався */
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px; 
+  letter-spacing: 0.54px;
+  text-align: center;
+}
 /* ------------- modal window ------------------------ */
 .backdrop{
   position: fixed;
