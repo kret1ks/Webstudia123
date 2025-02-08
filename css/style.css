@@ -17,12 +17,25 @@ body {
 display: flex;
 gap: 50px;
 }
+
 .header-link:focus,  
 .nav-link:focus {  
     outline: 2px solid var(--accent-color);
     border-radius: 5px;  
     background-color: rgb(33, 149, 243);
     transition: all 0.3s ease-in-out;
+}
+.nav-item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover,  
+.nav-item:focus-within {  
+  background-color: rgb(33, 149, 243);
+  border-radius: 5px;  
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .container {  
@@ -51,6 +64,7 @@ gap: 50px;
   display: flex;
   justify-content: center;
 }
+
 .header-logo {  
     color: #2196F3; 
     font-size: 26px;  
@@ -438,7 +452,7 @@ margin-bottom: 50px;
 }
 .client-list a:focus{
   outline: none;
-  background-color: #2196f3;
+  background-color: #2196F3;
 }
 .client-list {
     display: flex;
@@ -807,6 +821,7 @@ position: relative;
 
 
 
+
 .header-list{
 display: flex;
 gap: 50px;
@@ -928,21 +943,27 @@ letter-spacing: 0.54px;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(33, 150, 243, 0.90); 
+  background: rgba(33, 150, 243, 0.90);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 20px;
-  opacity: 0; /* Ховаємо */
-  transition: opacity 0.3s ease-in-out; 
-}
+  transform: translateY(100%); 
+  opacity: 0;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}   
 .table-item:hover .overlay {
   opacity: 1; 
 }
 .overlay-text {  
-  width: 80%; 
+    width: 80%;
+    transform: translateY(100%); 
+    opacity: 0;
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), 
+    opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #FFF;
   font-size: 18px;
   font-weight: 400;
@@ -956,6 +977,26 @@ height: 24px;
 flex-shrink: 0;
   fill: white;
 }
+.table-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.table-item:hover .overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.table-item:hover .overlay-text {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+.table-item:not(:hover) .overlay {
+  transform: translateY(100%); 
+  opacity: 0;
+}
+
 /* ------------- modal window ------------------------ */
 .backdrop{
   position: fixed;
