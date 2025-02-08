@@ -502,7 +502,7 @@ margin-bottom: 50px;
   background-color: #2196f3;
 }
 .footer-logo {
-  color: var(--accent-color);
+  color: #2196F3;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -939,16 +939,22 @@ letter-spacing: 0.54px;
   transition: opacity 0.3s ease-in-out; 
 }
 .table-item:hover .overlay {
-  opacity: 1; /* Показуємо при наведенні */
+  opacity: 1; 
 }
 .overlay-text {  
-  width: 80%; /* Щоб текст не розтягувався */
+  width: 80%; 
   color: #FFF;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px; 
   letter-spacing: 0.54px;
   text-align: center;
+}
+.subscribe-icon {
+  width: 24px;
+height: 24px;
+flex-shrink: 0;
+  fill: white;
 }
 /* ------------- modal window ------------------------ */
 .backdrop{
