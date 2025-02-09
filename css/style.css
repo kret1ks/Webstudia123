@@ -25,27 +25,16 @@ gap: 50px;
     background-color: rgb(33, 149, 243);
     transition: all 0.3s ease-in-out;
 }
-.nav-item {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.nav-item:hover,  
-.nav-item:focus-within {  
-  background-color: rgb(33, 149, 243);
-  border-radius: 5px;  
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
 
-.container {  
+/* .container {  
     width: 1200px;  
     margin-left: auto;  
     margin-right: auto;  
     padding-left: 15px;  
     padding-right: 15px;  
     outline: 1px solid red;  
-}  
+}   */
 .header-item {
     display: flex;
     align-items: center; 
