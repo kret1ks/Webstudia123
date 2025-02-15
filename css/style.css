@@ -27,14 +27,14 @@ gap: 50px;
 }
 
 
-/* .container {  
+.container {  
     width: 1200px;  
     margin-left: auto;  
     margin-right: auto;  
     padding-left: 15px;  
     padding-right: 15px;  
     outline: 1px solid red;  
-}   */
+}  
 .header-item {
     display: flex;
     align-items: center; 
@@ -116,7 +116,7 @@ gap: 50px;
   letter-spacing: 0.28px;
 }
 .nav-link {
-  color: var(--text-color);
+  color: var(--accent-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -423,6 +423,7 @@ margin-top: 16px;
 
 .client{
   padding-bottom: 94px;
+  padding-top: 188px;
 }
 .client-use{
 width: 106px;
@@ -642,7 +643,10 @@ margin-right: 12px;
   align-items: center;
   justify-content: center;
   gap: 10px; 
-  padding: 10px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -676,13 +680,7 @@ flex-shrink: 0;
 
 
 
-                            
-:root {  
-    --text-color: #000; 
-    --accent-color: #0073ff; 
-    --additional-text: #666; 
-    --border: #ddd;
-}
+
 
 .container {  
     max-width: 1200px;
@@ -706,7 +704,9 @@ flex-shrink: 0;
     justify-content: center;  
     gap: 8px;  
 }  
-
+.btn-button:hover{
+box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
 .btn-button {  
     padding: 6px 23px;  
     color: var(--text-color);  
@@ -931,7 +931,10 @@ letter-spacing: 0.54px;
   position: relative;
   overflow: hidden;
 }
-
+.table-item:hover{
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -970,38 +973,41 @@ letter-spacing: 0.54px;
 .table-item:hover .overlay-text {
   transform: translateY(0);
   opacity: 1;
+  
 }
 
 
 
 
 /* ------------- modal window ------------------------ */
-.backdrop{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.80);
-  opacity: 1;
-}
-.is-hidden{
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-.modal{
-width: 528px;
-flex-shrink: 0;
-border-radius: 4px;
-background: #FFF;
-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: 40px;
-}
+ 
+
+.backdrop {  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  background-color: rgba(0, 0, 0, 0.80);  
+  opacity: 1;  
+}  
+
+
+
+.modal {  
+  width: 528px;  
+  flex-shrink: 0;  
+  border-radius: 4px;  
+  background: #FFF;  
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),  
+              0px 1px 1px 0px rgba(0, 0, 0, 0.14),  
+              0px 2px 1px 0px rgba(0, 0, 0, 0.20);  
+  position: absolute;   
+  top: 50%;   
+  left: 50%;   
+  transform: translate(-50%, -50%);   
+  padding: 40px;   
+}  
 .modal-button{
   width: 18px;
 height: 18px;
@@ -1043,6 +1049,11 @@ font-size: 12px;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.12px;
+}
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 .modal-input{
 width: 448px;
