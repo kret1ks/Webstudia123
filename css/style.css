@@ -965,7 +965,7 @@ letter-spacing: 0.54px;
   text-align: center;
 }
 
-/* Ховер на всю <li>, а не тільки на картинку */
+
 .table-item:hover .overlay,
 .table-item:hover .overlay-text {
   transform: translateY(0);
