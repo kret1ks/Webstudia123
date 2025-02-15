@@ -13,3 +13,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.toggle("no-scroll");  
   }  
 });
+

@@ -972,11 +972,7 @@ letter-spacing: 0.54px;
   opacity: 1;
 }
 
-/* Повертаємо назад, якщо немає ховеру */
-.table-item:not(:hover) .overlay {
-  transform: translateY(100%);
-  opacity: 0;
-}
+
 
 
 /* ------------- modal window ------------------------ */
