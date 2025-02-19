@@ -33,7 +33,7 @@ gap: 50px;
     margin-right: auto;  
     padding-left: 15px;  
     padding-right: 15px;  
-    outline: 1px solid red;  
+    /* outline: 1px solid red;   */
 }  
 .header-item {
     display: flex;
