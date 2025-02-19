@@ -609,7 +609,8 @@ fill: white;
   display: flex;
   flex-direction: column; 
   align-items: flex-start;
-  margin-top: 0; 
+  
+  margin-left: auto;
 }
 .subscribe-form {
   display: flex;
@@ -623,7 +624,7 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 margin-bottom: 20px;
-margin-left: 93px;
+/* margin-left: 93px; */
 }
 .subscribe-input{
 width: 358px;
@@ -633,7 +634,7 @@ border-radius: 4px;
 border: 1px solid rgba(255, 255, 255, 0.30);
 background: rgba(33, 150, 243, 0.00);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-margin-left: 93px;
+/* margin-left: 93px; */
 margin-right: 12px;
 }
 .subscribe-button {
@@ -980,34 +981,27 @@ letter-spacing: 0.54px;
 
 
 /* ------------- modal window ------------------------ */
- 
-
-.backdrop {  
-  position: fixed;  
-  top: 0;  
-  left: 0;  
-  right: 0;  
-  bottom: 0;  
-  background-color: rgba(0, 0, 0, 0.80);  
-  opacity: 1;  
-}  
-
-
-
-.modal {  
-  width: 528px;  
-  flex-shrink: 0;  
-  border-radius: 4px;  
-  background: #FFF;  
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),  
-              0px 1px 1px 0px rgba(0, 0, 0, 0.14),  
-              0px 2px 1px 0px rgba(0, 0, 0, 0.20);  
-  position: absolute;   
-  top: 50%;   
-  left: 50%;   
-  transform: translate(-50%, -50%);   
-  padding: 40px;   
-}  
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.80);
+  opacity: 1;
+}
+.modal{
+width: 528px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FFF;
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 40px;
+}
 .modal-button{
   width: 18px;
 height: 18px;
