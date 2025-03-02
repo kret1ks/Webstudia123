@@ -45,7 +45,7 @@
   }
   .modal-title{
   width: 448px;
-  color: var(--text-color);
+  color: $text-color;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -55,7 +55,7 @@
   justify-content: center;
   }
   .modal-text{
-  color: var(--additional-text);
+  color: $dditional-text;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
@@ -101,7 +101,7 @@
     padding-bottom: 12px;
   }
   .checkbox-prim{
-  color:var(--additional-text);
+  color: $additional-text;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -109,7 +109,7 @@
   margin-left: 9px;
   }
   .modal-link{
-    color: var(--accent-color);
+    color: $accent-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;

@@ -52,10 +52,10 @@
   }
   
   .client-item a:hover {
-      border-color: var(--accent-color); 
+      border-color: $accent-color; 
   }
   
   .client-item a:hover .client-icon {
-      fill: var(--accent-color); 
+      fill: $accent-color; 
   }
   

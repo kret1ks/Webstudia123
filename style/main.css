@@ -25,25 +25,13 @@ img {
   /* outline: 1px solid red;   */
 }
 
-:root {
-  --logo-color: #000;
-  --accent-color: #2196f3;
-  --text-color: #212121;
-  --additional-text: #757575;
-  --main-color: #fff;
-  --team-background: #f5f4fa;
-  --footer-background: #2f303a;
-  --border: #EEE;
-  --footer-number: rgba(255, 255, 255, 0.6);
-}
-
 body {
   font-family: "Roboto";
 }
 
 .header-link:focus,
 .nav-link:focus {
-  outline: 2px solid var(--accent-color);
+  outline: 2px solid #2196f3;
   border-radius: 5px;
   background-color: rgb(33, 149, 243);
   transition: all 0.3s ease-in-out;
@@ -93,7 +81,7 @@ body {
 }
 
 .header-span {
-  color: var(--logo-color);
+  color: #000;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
@@ -114,7 +102,7 @@ body {
 }
 
 .header-link {
-  color: var(--text-color);
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -124,16 +112,16 @@ body {
 }
 
 .header-link:hover .logo {
-  stroke: var(--accent-color);
-  fill: var(--accent-color);
+  stroke: #2196f3;
+  fill: #2196f3;
 }
 
 .header-link:hover .logo {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .nav-link:hover {
-  color: var(--accent-color);
+  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -141,7 +129,7 @@ body {
 }
 
 .nav-link {
-  color: var(--accent-color);
+  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -154,7 +142,7 @@ body {
 }
 
 .header-link:hover {
-  color: var(--accent-color);
+  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -162,7 +150,7 @@ body {
 }
 
 .header-link {
-  color: var(--additional-text);
+  color: #757575;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -174,7 +162,7 @@ body {
 }
 
 .hero {
-  background-color: var(--footer-background);
+  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -182,7 +170,7 @@ body {
 }
 
 .hero-title {
-  color: var(--main-color);
+  color: #fff;
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -346,7 +334,6 @@ body {
 
 .team {
   padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--team-background);
 }
 
@@ -430,7 +417,7 @@ body {
 
 .client {
   padding-bottom: 94px;
-  padding-top: 188px;
+  padding-top: 94px;
 }
 
 .client-use {
@@ -493,7 +480,7 @@ body {
 }
 
 .footer {
-  background-color: var(--footer-background);
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -525,7 +512,7 @@ body {
 }
 
 .logo-span {
-  color: var(--main-color);
+  color: #fff;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -535,7 +522,7 @@ body {
 }
 
 .footer-link {
-  color: var(--main-color);
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -549,7 +536,7 @@ body {
 }
 
 .footer-number {
-  color: var(--footer-number);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -566,7 +553,7 @@ body {
 }
 
 .footer-title {
-  color: var(--main-color);
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -602,7 +589,7 @@ body {
 }
 
 .footer-social-link:hover {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .footer-icon {
@@ -882,7 +869,7 @@ body {
 
 .btn-button {
   padding: 6px 23px;
-  color: var(--text-color);
+  color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -894,7 +881,7 @@ body {
 }
 
 .btn-button:hover {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .table-list {
@@ -922,7 +909,7 @@ body {
 }
 
 .table-title {
-  color: var(--text-color);
+  color: #212121;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -931,7 +918,7 @@ body {
 }
 
 .table-text {
-  color: var(--additional-text);
+  color: #757575;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.85;
@@ -943,7 +930,7 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--accent-color);
+  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -951,7 +938,7 @@ body {
 }
 
 .nav-link {
-  color: var(--text-color);
+  color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -965,7 +952,7 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   visibility: hidden;
   position: absolute;
   bottom: -35px;
@@ -983,7 +970,7 @@ body {
 }
 
 .header-link:hover {
-  color: var(--accent-color);
+  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -991,7 +978,7 @@ body {
 }
 
 .header-link {
-  color: var(--additional-text);
+  color: #757575;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -1013,7 +1000,7 @@ body {
 
 .btn-button {
   padding: 6px 23px;
-  color: var(--text-color);
+  color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -1025,7 +1012,7 @@ body {
 
 .btn-button:hover {
   padding: 6px 23px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -1058,7 +1045,7 @@ body {
 }
 
 .table-title {
-  color: var(--text-color);
+  color: #212121;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -1067,7 +1054,7 @@ body {
 }
 
 .table-text {
-  color: var(--additional-text);
+  color: #757575;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.85;
