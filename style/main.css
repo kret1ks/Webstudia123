@@ -160,8 +160,7 @@ body {
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/friends.jpg);
 }
-
-.hero-title {
+.hero__title {
   color: #fff;
   text-align: center;
   font-size: 44px;
@@ -174,8 +173,7 @@ body {
   margin-right: auto;
   margin-bottom: 30px;
 }
-
-.hero-button {
+.hero__button {
   border-radius: 4px;
   background: #2196F3;
   color: #fff;
@@ -193,69 +191,37 @@ body {
 .management {
   padding-top: 94px;
 }
-
-.management-list {
+.management__list {
   display: flex;
   gap: 30px;
 }
-
-.management-item::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background: #f5f4fa;
-  margin-bottom: 30px;
-  background-image: url(../img/antenna.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.management-item:nth-child(2)::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background: #f5f4fa;
-  margin-bottom: 30px;
-  background-image: url(../img/clock.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.management-item:nth-child(3)::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background: #f5f4fa;
-  margin-bottom: 30px;
-  background-image: url(../img/diagram.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.management-item:nth-child(4)::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background: var(--team-background);
-  margin-bottom: 30px;
-  background-image: url(../img/astronaut.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.management-item {
+.management__item {
   flex-basis: calc((100% - 90px) / 4);
 }
-
-.management-title {
+.management__item::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.management__item:nth-child(1)::before {
+  background-image: url(../img/antenna.webp);
+}
+.management__item:nth-child(2)::before {
+  background-image: url(../img/clock.webp);
+}
+.management__item:nth-child(3)::before {
+  background-image: url(../img/diagram.webp);
+}
+.management__item:nth-child(4)::before {
+  background-image: url(../img/astronaut.webp);
+}
+.management__title {
   color: #212121;
   font-size: 14px;
   font-weight: 700;
@@ -264,8 +230,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
-.management-text {
+.management__text {
   color: #757575;
   font-size: 14px;
   font-weight: 400;
