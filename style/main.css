@@ -33,12 +33,10 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
 .header__box {
   display: flex;
   align-items: center;
 }
-
 .header__logo {
   color: #2196f3;
   font-size: 26px;
@@ -47,7 +45,6 @@ body {
   letter-spacing: 0.78px;
   margin-right: 93px;
 }
-
 .header__span {
   color: #000;
   font-size: 26px;
@@ -55,58 +52,56 @@ body {
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
-
-.nav__list {
+.header__list {
   display: flex;
   gap: 50px;
 }
-
-.nav__link:hover {
+.header__list:hover {
   color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-
-.header__link:hover {
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  fill: #757575;
+}
+.header__item:hover {
   color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-
-.header-link:focus,
-.nav-link:focus {
+.header__link {
+  display: flex;
+  justify-content: center;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+  align-items: center;
+}
+.header__link:hover .logo {
+  stroke: #2196f3;
+  fill: #2196f3;
+}
+.header__link:focus {
   outline: 2px solid #2196f3;
   border-radius: 5px;
   background-color: rgb(33, 149, 243);
   transition: all 0.3s ease-in-out;
 }
 
-.header-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-link {
-  display: flex;
-  justify-content: center;
-}
-
-.logo {
-  margin-right: 10px;
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-}
-
-.header-item:nth-child(2) .logo {
-  width: 10px;
-  height: 16px;
-  flex-shrink: 0;
+.nav-link:focus {
+  outline: 2px solid #2196f3;
+  border-radius: 5px;
+  background-color: rgb(33, 149, 243);
+  transition: all 0.3s ease-in-out;
 }
 
 .header-contact {
@@ -117,40 +112,14 @@ body {
 }
 
 .logo {
+  margin-right: 10px;
   width: 16px;
-  height: 12px;
+  height: 16px;
   flex-shrink: 0;
 }
-
-.header-link {
-  color: #212121;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-  display: flex;
-  align-items: center;
-}
-
-.header-link:hover .logo {
-  stroke: #2196f3;
-  fill: #2196f3;
-}
-
-.header-link:hover .logo {
-  fill: #2196f3;
-}
-
-.header-link {
-  color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-}
-
-.header-item {
-  fill: #757575;
+.header-item:nth-child(2) .logo {
+  width: 10px;
+  height: 16px;
 }
 
 .hero {
