@@ -14,7 +14,7 @@
   }
 
 &__logo {
-    color: #2196F3;
+    color: $accent-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -97,6 +97,10 @@
     transition: background-color 0.3s ease;  
   
     &:focus {  
+      outline: none;  
+      background-color: $accent-color;  
+    }  
+    &:hover {  
       outline: none;  
       background-color: $accent-color;  
     }  
