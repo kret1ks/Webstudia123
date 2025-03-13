@@ -1,61 +1,67 @@
-.client{
-    padding-bottom: 94px;
-    padding-top: 94px;
+.client {  
+    padding-bottom: 94px;  
+    padding-top: 94px;  
 
-      .client-title{
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-  }
-  }
-  .client-use{
-  width: 106px;
-  height: 60px;
-  flex-shrink: 0;
-  }
+    &__title {  
+        color: $text-color;  
+        text-align: center;  
+        font-size: 36px;  
+        font-style: normal;  
+        font-weight: 700;  
+        line-height: normal;  
+        letter-spacing: 1.08px;  
+        margin-bottom: 50px;  
+    }  
 
-  .client-list a:focus{
-    outline: none;
-    background-color: #2196F3;
-  }
-  .client-list {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-  }
-  .team-box a:focus {
-      outline: none;
-      background-color: #2196f3; 
-      border-radius: 50%; 
-  }
-  
-  
-  .client-item a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 170px;
-      height: 92px;
-      border: 1px solid darkgrey;
-      border-radius: 4px; 
-  }
-  
-  .client-icon {
-      width: 106px;
-      height: 60px;
-      fill: darkgrey;
-      transition: fill 0.3s ease;
-  }
-  
-  .client-item a:hover {
-      border-color: $accent-color; 
-  }
-  
-  .client-item a:hover .client-icon {
-      fill: $accent-color; 
-  }
+    &__list {  
+        display: flex;  
+        justify-content: space-between;  
+        gap: 30px;  
+
+        a:focus {  
+            outline: none;  
+            background-color: $accent-color;  
+        }  
+    }  
+
+    &__item {  
+        a {  
+            display: flex;  
+            align-items: center;  
+            justify-content: center;  
+            width: 170px;  
+            height: 92px;  
+            border: 1px solid darkgrey;  
+            border-radius: 4px;  
+
+            &:hover {  
+                border-color: $accent-color;   
+
+                .client__icon {  
+                    fill: $accent-color;   
+                }  
+            }  
+        }  
+    }  
+
+    &__icon {  
+        width: 106px;  
+        height: 60px;  
+        fill: darkgrey;  
+        transition: fill 0.3s ease;  
+    }  
+
+    &__use {  
+        width: 106px;  
+        height: 60px;  
+        flex-shrink: 0;  
+    }  
+}  
+
+.team-box {  
+    a:focus {  
+        outline: none;  
+        background-color: $accent-color;   
+        border-radius: 50%;   
+    }  
+}  

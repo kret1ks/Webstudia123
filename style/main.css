@@ -250,6 +250,7 @@ body {
 
 .team {
   padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 .team__subject {
@@ -324,7 +325,7 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.client .client-title {
+.client__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -334,31 +335,16 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-
-.client-use {
-  width: 106px;
-  height: 60px;
-  flex-shrink: 0;
-}
-
-.client-list a:focus {
-  outline: none;
-  background-color: #2196F3;
-}
-
-.client-list {
+.client__list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-
-.team-box a:focus {
+.client__list a:focus {
   outline: none;
   background-color: #2196f3;
-  border-radius: 50%;
 }
-
-.client-item a {
+.client__item a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,20 +353,28 @@ body {
   border: 1px solid darkgrey;
   border-radius: 4px;
 }
-
-.client-icon {
+.client__item a:hover {
+  border-color: #2196f3;
+}
+.client__item a:hover .client__icon {
+  fill: #2196f3;
+}
+.client__icon {
   width: 106px;
   height: 60px;
   fill: darkgrey;
   transition: fill 0.3s ease;
 }
-
-.client-item a:hover {
-  border-color: #2196f3;
+.client__use {
+  width: 106px;
+  height: 60px;
+  flex-shrink: 0;
 }
 
-.client-item a:hover .client-icon {
-  fill: #2196f3;
+.team-box a:focus {
+  outline: none;
+  background-color: #2196f3;
+  border-radius: 50%;
 }
 
 .footer {
@@ -633,6 +627,7 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  margin-bottom: 111px;
 }
 .backdrop__input:hover, .backdrop__input:focus, .backdrop__comment:hover, .backdrop__comment:focus {
   outline: none;
@@ -702,6 +697,7 @@ body {
   margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
 }
 .btn__button {
   padding: 6px 23px;
@@ -716,15 +712,9 @@ body {
   transition: background-color 0.3s ease;
 }
 .btn__button:hover {
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: #2196f3;
   color: #fff;
-}
-.btn__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
 }
 .btn__item {
   outline: 1px solid var(--border);
@@ -733,9 +723,11 @@ body {
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+  gap: 30px;
+  padding-bottom: 32px;
 }
 .btn__item:hover {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .btn__verybox {
   outline: 1px solid var(--border);
@@ -765,7 +757,7 @@ body {
   opacity: 0;
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn__verybox:hover .btn__overlay {
+.btn__item:hover .btn__overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -795,52 +787,20 @@ body {
   letter-spacing: 0.54px;
   text-align: center;
 }
-.btn__verybox:hover .btn__text {
+.btn__item:hover .btn__text {
   transform: translateY(0);
   opacity: 1;
 }
 
-.table-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.table-item {
-  position: relative;
-  overflow: hidden;
-}
-
-.table-item {
-  position: relative;
-  overflow: hidden;
-}
-
-.table-item:hover {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
-
-.table-item:hover .overlay,
-.table-item:hover .overlay-text {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.header-list {
-  display: flex;
-  gap: 50px;
-}
-
-.header-link:hover {
-  color: #2196f3;
+.header__link {
+  color: #757575;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-
-.header-link {
-  color: #757575;
+.header__link:hover {
+  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
