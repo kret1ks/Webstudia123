@@ -71,10 +71,23 @@ body {
 }
 .header__item:hover {
   color: #2196f3;
+  fill: #2196f3;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+}
+.header__contact {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+.header__logotup {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 .header__link {
   display: flex;
@@ -96,30 +109,12 @@ body {
   background-color: rgb(33, 149, 243);
   transition: all 0.3s ease-in-out;
 }
-
-.nav-link:focus {
-  outline: 2px solid #2196f3;
-  border-radius: 5px;
-  background-color: rgb(33, 149, 243);
-  transition: all 0.3s ease-in-out;
+.header .header__item-navigation a {
+  color: #212121;
+  text-decoration: none;
 }
-
-.header-contact {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-left: auto;
-}
-
-.logo {
-  margin-right: 10px;
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-}
-.header-item:nth-child(2) .logo {
-  width: 10px;
-  height: 16px;
+.header .header__item-navigation a:hover {
+  color: #2196f3;
 }
 
 .hero {
@@ -329,7 +324,7 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.client__title {
+.client .client-title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -339,20 +334,22 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-.client__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-.client__list:focus {
-  outline: none;
-  background-color: #2196F3;
-}
 
 .client-use {
   width: 106px;
   height: 60px;
   flex-shrink: 0;
+}
+
+.client-list a:focus {
+  outline: none;
+  background-color: #2196F3;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .team-box a:focus {
