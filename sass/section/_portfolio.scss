@@ -20,7 +20,27 @@
     gap: 8px;  
     flex-wrap: wrap;  
   }  
-
+&__title{
+  color: $text-color;
+font-size: 18px;
+font-weight: 700;
+line-height: 36px; 
+letter-spacing: 1.08px;
+padding-top: 20px;
+padding-left: 24px;
+padding-right: 24px;
+}
+&__rite{
+  color: $additional-text;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.48px;
+padding-left: 24px;
+padding-right: 24px;
+padding-bottom: 20px;
+}
   &__button {  
     padding: 6px 23px;  
     color: $text-color;  
@@ -42,22 +62,33 @@
     }
   }
 
-  &__item {  
-    outline: 1px solid var(--border);  
-    flex-basis: calc((100% - 60px) / 3); 
-    box-sizing: border-box;
-    position: relative;  
-    overflow: hidden;  
-    transition: box-shadow 0.3s ease;
-    gap: 30px;
-    padding-bottom: 32px;
-
-    &:hover {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                  0px 4px 4px rgba(0, 0, 0, 0.06),
-                  1px 4px 6px rgba(0, 0, 0, 0.16);
+  .btn {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
-  }
+
+    &__item {  
+        outline: 1px solid var(--border);  
+        flex-basis: calc((100% - 60px) / 3); 
+        box-sizing: border-box;
+        position: relative;  
+        overflow: hidden;  
+        transition: box-shadow 0.3s ease;
+        padding-bottom: 32px;
+        padding-top: 50px;
+        &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                        0px 4px 4px rgba(0, 0, 0, 0.06),
+                        1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+}
+
 
   &__verybox {
     outline: 1px solid var(--border);
