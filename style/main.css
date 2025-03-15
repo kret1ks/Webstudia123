@@ -601,6 +601,8 @@ body {
 }
 .backdrop__wrap {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .backdrop__input, .backdrop__comment {
   width: 448px;
@@ -609,6 +611,7 @@ body {
   margin-top: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
+  transition: border 0.3s ease;
 }
 .backdrop__input {
   height: 40px;
@@ -617,20 +620,21 @@ body {
   height: 120px;
   resize: none;
   padding-top: 12px;
-  padding-right: 16px;
+  padding-left: 16px;
   padding-bottom: 12px;
 }
 .backdrop__svg {
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 50%;
   left: 12px;
-  transform: translateY(-50%);
 }
 .backdrop__input:hover, .backdrop__input:focus, .backdrop__comment:hover, .backdrop__comment:focus {
   outline: none;
   border: 2px solid #2196f3;
+}
+.backdrop__wrap:hover .backdrop__svg, .backdrop__wrap:focus-within .backdrop__svg {
+  fill: #2196f3;
 }
 .backdrop__chek {
   display: flex;
