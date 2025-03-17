@@ -5,7 +5,7 @@
   &__box {
     // display: flex;
     // align-items: center;
-    @include flex-box ()
+    @include flex-box ();
   }
 
   &__logo {
@@ -30,7 +30,7 @@
   &__list {
     // display: flex;
     // gap: 50px;
-    @include flex-box ($gap:50px)
+    @include flex-box ($gap:50px);
     &:hover {
       color: $accent-color;
       font-size: 14px;
@@ -41,10 +41,11 @@
   }
 
   &__item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     fill: $additional-text; 
+    // display: flex;
+    // align-items: center;
+    // gap: 10px;
+   @include flex-box ($gap:10px);
 
     &:hover {
       color: $accent-color;
@@ -57,10 +58,11 @@
   }
 
   &__contact {
-    display: flex;
-    align-items: center;
-    gap: 30px;
     margin-left: auto;
+    // display: flex;
+    // align-items: center;
+    // gap: 30px;
+   @include flex-box ($gap:30px);
   }
   &__logotup {
     margin-right: 10px;
@@ -71,14 +73,16 @@
 
 
   &__link {
-    display: flex;
-    justify-content: center;
     color: $text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+@include flex-box ();
+    
 
     &:hover {
       .logo {

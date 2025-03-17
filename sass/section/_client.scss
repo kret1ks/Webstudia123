@@ -14,9 +14,10 @@
     }  
 
     &__list {  
-        display: flex;  
-        justify-content: space-between;  
-        gap: 30px;  
+        // display: flex;  
+        // justify-content: space-between;  
+        // gap: 30px;  
+        @include flex-box ($gap:30px);
 
         a:focus {  
             outline: none;  

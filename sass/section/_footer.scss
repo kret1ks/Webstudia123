@@ -4,9 +4,10 @@
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+    // display: flex;
+    // align-items: baseline;
+    // flex-wrap: wrap;
+    @include flex-box ($wrap, $align:baseline);
   }
 
 &__info {
@@ -62,10 +63,11 @@
   }
   
   &__listbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     text-align: center;
+    @include flex-box ($direction:column);
   }
 
 &__title {
@@ -78,8 +80,9 @@
   }
 
 &__social-list {
-    display: flex;
-    gap: 10px;
+    // display: flex;
+    // gap: 10px;
+    @include flex-box ($gap:10px);
     padding: 0;
     margin: 0;
     list-style: none;
@@ -115,9 +118,10 @@
     }
 
  &__subscribe {
-      display: flex;
-      flex-direction: column; 
-      align-items: flex-start;
+      // display: flex;
+      // flex-direction: column; 
+      // align-items: flex-start;
+      @include flex-box ($align flex-start);
       margin-left: auto;
 
       &__title{
