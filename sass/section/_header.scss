@@ -3,8 +3,9 @@
   padding-bottom: 25px;
 
   &__box {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    @include flex-box ()
   }
 
   &__logo {
@@ -27,9 +28,9 @@
   }
 
   &__list {
-    display: flex;
-    gap: 50px;
-
+    // display: flex;
+    // gap: 50px;
+    @include flex-box ($gap:50px)
     &:hover {
       color: $accent-color;
       font-size: 14px;
