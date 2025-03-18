@@ -52,12 +52,13 @@
     &__title {
         width: 448px;
         color: $text-color;
-        text-align: center;
         font-size: 20px;
         font-weight: 700;
         letter-spacing: 0.6px;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+        // text-align: center;
+        @include flex-box ($align:center);
     }
 
     &__text {
@@ -69,8 +70,7 @@
 
     &__wrap {
         position: relative;
-        display: flex;
-        align-items: center;
+      @include flex-box ();
     }
 
     &__input,
@@ -117,8 +117,7 @@
     }
 
     &__chek {
-        display: flex;
-        justify-content: center;
+@include flex-box ();
         margin-top: 20px;
     }
 

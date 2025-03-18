@@ -35,7 +35,11 @@ body {
 }
 .header__box {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
 }
 .header__logo {
   color: #2196f3;
@@ -54,6 +58,10 @@ body {
 }
 .header__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 50px;
 }
 .header__list:hover {
@@ -64,10 +72,13 @@ body {
   letter-spacing: 0.28px;
 }
 .header__item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   fill: #757575;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
 }
 .header__item:hover {
   color: #2196f3;
@@ -78,10 +89,13 @@ body {
   letter-spacing: 0.28px;
 }
 .header__contact {
-  display: flex;
-  align-items: center;
-  gap: 30px;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
 }
 .header__logotup {
   margin-right: 10px;
@@ -90,14 +104,17 @@ body {
   flex-shrink: 0;
 }
 .header__link {
-  display: flex;
-  justify-content: center;
   color: #212121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
 }
 .header__link:hover .logo {
   stroke: #2196f3;
@@ -139,7 +156,7 @@ body {
 }
 .hero__button {
   border-radius: 4px;
-  background: #2196F3;
+  background: #2196f3;
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -157,6 +174,10 @@ body {
 }
 .management__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 30px;
 }
 .management__item {
@@ -219,6 +240,9 @@ body {
 .work__list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 30px;
 }
 .work__item {
@@ -264,6 +288,10 @@ body {
 }
 .team__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 30px;
 }
 .team__img {
@@ -293,10 +321,13 @@ body {
   letter-spacing: 0.48px;
 }
 .team__box {
+  margin-top: 16px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 10px;
-  margin-top: 16px;
 }
 .team__icon {
   width: 20px;
@@ -337,7 +368,10 @@ body {
 }
 .client__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 30px;
 }
 .client__list a:focus {
@@ -384,8 +418,11 @@ body {
 }
 .footer__container {
   display: flex;
+  justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
 }
 .footer__info {
   max-width: 300px;
@@ -433,10 +470,13 @@ body {
   display: inline-block;
 }
 .footer__listbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0px;
 }
 .footer__title {
   color: #fff;
@@ -448,6 +488,10 @@ body {
 }
 .footer__social-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 10px;
   padding: 0;
   margin: 0;
@@ -480,8 +524,11 @@ body {
 }
 .footer__subscribe {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0px;
   margin-left: auto;
 }
 .footer__subscribe__title {
@@ -586,12 +633,15 @@ body {
 .backdrop__title {
   width: 448px;
   color: #212121;
-  text-align: center;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
 }
 .backdrop__text {
   color: #757575;
@@ -602,7 +652,11 @@ body {
 .backdrop__wrap {
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
 }
 .backdrop__input, .backdrop__comment {
   width: 448px;
@@ -639,6 +693,10 @@ body {
 .backdrop__chek {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
   margin-top: 20px;
 }
 .backdrop__prim {
@@ -684,8 +742,11 @@ body {
 .btn {
   padding: 94px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0px;
 }
 .btn__container {
   max-width: 1200px;
@@ -696,11 +757,14 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
   margin-bottom: 50px;
   justify-content: center;
-  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  flex-direction: row;
+  gap: 8px;
 }
 .btn__title {
   color: #212121;
@@ -741,12 +805,15 @@ body {
   color: #fff;
 }
 .btn .btn__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
 }
 .btn .btn__item {
   outline: 1px solid var(--border);
@@ -780,14 +847,16 @@ body {
   height: 100%;
   background: #2196f3;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   padding: 20px;
   transform: translateY(100%);
   opacity: 0;
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
 }
 .btn__item:hover .btn__overlay {
   transform: translateY(0);

@@ -7,7 +7,7 @@
     // display: flex;
     // align-items: baseline;
     // flex-wrap: wrap;
-    @include flex-box ($wrap, $align:baseline);
+    @include flex-box ($wrap:wrap, $align:baseline);
   }
 
 &__info {
@@ -121,7 +121,7 @@
       // display: flex;
       // flex-direction: column; 
       // align-items: flex-start;
-      @include flex-box ($align flex-start);
+      @include flex-box ($align:flex-start, $direction:column,);
       margin-left: auto;
 
       &__title{
