@@ -1,6 +1,30 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width:768px){
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width:1200px){
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+
+ &__text{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.24px;
+
+  @media screen and (min-width:1200px){
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+ }
+
 
   &__box {
     // display: flex;
@@ -12,9 +36,14 @@
     color: $accent-color;
     font-size: 26px;
     font-weight: 700;
-    line-height: 1.38;
+    line-height: 1.38;  
     letter-spacing: 0.78px;
     margin-right: 93px;
+    letter-spacing: 0,72;
+    @media screen and (min-width:1200px){
+      font-size: 26px;
+      letter-spacing: 0.78;
+    }
   }
 
 
@@ -59,10 +88,20 @@
 
   &__contact {
     margin-left: auto;
-    // display: flex;
-    // align-items: center;
-    // gap: 30px;
-   @include flex-box ($gap:30px);
+    display: none;
+    align-items: center;
+    gap: 30px;
+  //  @include flex-box ($gap:30px);
+
+   @media screen and (min-width:768px){
+  flex-direction: column;
+  display: flex;
+   }
+   @media screen and (min-width:1200px){
+    flex-direction: row;
+   }
+
+
   }
   &__logotup {
     margin-right: 10px;
