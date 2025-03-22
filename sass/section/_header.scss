@@ -13,6 +13,7 @@
   }
 
 
+
  &__text{
   font-weight: 500;
   font-size: 12px;
@@ -27,19 +28,20 @@
 
 
   &__box {
-    // display: flex;
-    // align-items: center;
-    @include flex-box ();
+    display: flex;
+    align-items: center;
+    // @include flex-box ();
   }
 
   &__logo {
     color: $accent-color;
     font-size: 26px;
     font-weight: 700;
+    font-family: Raleway;
     line-height: 1.38;  
     letter-spacing: 0.78px;
     margin-right: 93px;
-    letter-spacing: 0,72;
+    letter-spacing: 0.72;
     @media screen and (min-width:1200px){
       font-size: 26px;
       letter-spacing: 0.78;
@@ -86,23 +88,7 @@
     }
   }
 
-  &__contact {
-    margin-left: auto;
-    display: none;
-    align-items: center;
-    gap: 30px;
-  //  @include flex-box ($gap:30px);
 
-   @media screen and (min-width:768px){
-  flex-direction: column;
-  display: flex;
-   }
-   @media screen and (min-width:1200px){
-    flex-direction: row;
-   }
-
-
-  }
   &__logotup {
     margin-right: 10px;
     width: 16px;
@@ -147,9 +133,22 @@
       color: $accent-color;
     }
   }
-  
-}
+  &__contact {
+ display: none;
+ align-items: center;
+ margin-left: auto;
+    gap: 30px;
+  //  @include flex-box ($gap:30px);
 
+   @media screen and (min-width:768px){
+  flex-direction: column;
+  display: flex;
+   }
+   @media screen and (min-width:1200px){
+    flex-direction: row;
+   }
+  }
+}
 
 
 

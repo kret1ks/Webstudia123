@@ -62,20 +62,17 @@ body {
 }
 .header__box {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 0px;
 }
 .header__logo {
   color: #2196f3;
   font-size: 26px;
   font-weight: 700;
+  font-family: Raleway;
   line-height: 1.38;
   letter-spacing: 0.78px;
   margin-right: 93px;
-  letter-spacing: 0, 72;
+  letter-spacing: 0.72;
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
@@ -122,23 +119,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-.header__contact {
-  margin-left: auto;
-  display: none;
-  align-items: center;
-  gap: 30px;
-}
-@media screen and (min-width: 768px) {
-  .header__contact {
-    flex-direction: column;
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__contact {
-    flex-direction: row;
-  }
-}
 .header__logotup {
   margin-right: 10px;
   width: 16px;
@@ -174,6 +154,23 @@ body {
 }
 .header .header__item-navigation a:hover {
   color: #2196f3;
+}
+.header__contact {
+  display: none;
+  align-items: center;
+  margin-left: auto;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .header__contact {
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    flex-direction: row;
+  }
 }
 
 .hero {
