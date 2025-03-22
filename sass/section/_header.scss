@@ -40,11 +40,18 @@
     font-family: Raleway;
     line-height: 1.38;  
     letter-spacing: 0.78px;
-    margin-right: 93px;
+   margin-right: auto;
     letter-spacing: 0.72;
+
+    @media screen and (min-width:768px){
+      font-size: 26px;
+      letter-spacing: 0.78;
+      margin-right: 88px;
+    }
     @media screen and (min-width:1200px){
       font-size: 26px;
       letter-spacing: 0.78;
+      margin-right: 93px;
     }
   }
 
@@ -156,5 +163,12 @@
 
 
 
+
+
+.header-nav{
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
 
 
