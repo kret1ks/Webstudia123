@@ -137,17 +137,19 @@
  display: none;
  align-items: center;
  margin-left: auto;
-    gap: 30px;
+ gap: 30px;;
   //  @include flex-box ($gap:30px);
 
    @media screen and (min-width:768px){
   flex-direction: column;
   display: flex;
+  gap: 10px;
    }
    @media screen and (min-width:1200px){
     flex-direction: row;
-   }
-  }
+    gap: 30px;
+    }
+    }                                           
 }
 
 

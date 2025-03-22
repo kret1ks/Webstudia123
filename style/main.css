@@ -165,11 +165,13 @@ body {
   .header__contact {
     flex-direction: column;
     display: flex;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__contact {
     flex-direction: row;
+    gap: 30px;
   }
 }
 
