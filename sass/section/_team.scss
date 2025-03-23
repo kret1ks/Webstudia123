@@ -1,9 +1,12 @@
 
 .team{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $team-background;
-
+@media screen and (min-width:1200px){
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
     &__subject {
       color: $text-color;
@@ -19,7 +22,7 @@
    &__list{
       // display: flex;
       // gap: 30px;
-
+      // flex-wrap: wrap;
 @include flex-box ($gap:30px);
     }
 
@@ -42,10 +45,17 @@
           color: $text-color;
           text-align: center;
           font-size: 16px;
-          font-weight: 500;
+          font-weight: 700;
           line-height: 1.187;
+          font-family: Roboto;
           letter-spacing: 0.48px;
           margin-bottom: 10px;
+          margin-top: 30px;
+
+          @media screen and (min-width:1200px){
+          margin-bottom: 10px;
+          margin-top: 30px;
+          }
         }
         
 
