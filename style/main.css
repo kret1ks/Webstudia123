@@ -507,13 +507,13 @@ body {
 }
 
 .client {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 30px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .client {
-    padding-bottom: 30px;
-    padding-top: 60px;
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 .client__title {
@@ -521,14 +521,16 @@ body {
   text-align: center;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  line-height: 1.16;
+  letter-spacing: 0.84px;
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 @media screen and (min-width: 1200px) {
   .client__title {
     font-size: 36px;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
   }
 }
 .client__list {
