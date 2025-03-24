@@ -535,10 +535,6 @@ body {
 }
 .client__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   gap: 30px;
 }
 .client__list a:focus {
@@ -551,7 +547,7 @@ body {
   justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid darkgrey;
+  outline: 1px solid darkgrey;
   border-radius: 4px;
 }
 .client__item a:hover {
