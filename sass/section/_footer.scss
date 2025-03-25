@@ -4,25 +4,35 @@
   padding-bottom: 60px;
 
   &__container {
-    // display: flex;
-    // align-items: baseline;
-    // flex-wrap: wrap;
-    @include flex-box ($wrap:wrap, $align:baseline);
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    // @include flex-box ($wrap:wrap, $align:baseline);
+    flex-direction: column;
+    @media screen and (min-width: 768px){
+      flex-direction: row;
+    }
   }
 
 &__info {
     max-width: 300px;
-  }
+}
 
 &__logo {
     color: $accent-color;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.38;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
     margin-bottom: 20px;
     display: inline-block;
+@media screen and (min-width: 1200px){
+  font-size: 26px;
+  letter-spacing: 0.78px;
+}
+
   }
 
   &__span {
@@ -68,6 +78,12 @@
     // align-items: center;
     text-align: center;
     @include flex-box ($direction:column);
+    @media screen and (min-width: 768px){
+      margin-left: 165px;
+    }
+    @media screen and (min-width: 768px){
+      margin-left:  70px;
+    }
   }
 
 &__title {
@@ -118,12 +134,13 @@
     }
 
  &__subscribe {
-      // display: flex;
-      // flex-direction: column; 
-      // align-items: flex-start;
-      @include flex-box ($align:flex-start, $direction:column,);
-      margin-left: auto;
-
+  // margin-left: auto;
+      @media screen and (min-width: 1200px){
+        margin-left: auto;
+      }
+      // @media screen and (min-width: 768px){
+      //   margin-left: auto;
+      // }
       &__title{
         color: #FFF;
         font-size: 14px;
@@ -132,13 +149,23 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
-        /* margin-left: 93px; */
+   
+      
+  
         }
     }
 
     &__form {
       display: flex;
       align-items: center; 
+      flex-direction: column;
+      gap: 20px;
+   
+      @media screen and (min-width: 1200px){
+        flex-direction: row;
+        gap: 12px;
+      }
+     
     }
 
     &__input{
@@ -153,7 +180,7 @@
       margin-right: 12px;
       }
       &__button {
-        width: 100%;
+        width: auto;
         height: 50px;
         display: flex;
         align-items: center;
@@ -168,7 +195,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border: none;
         cursor: pointer;
-        flex-grow: 1;
+        flex-grow: unset;
       }
 
     &__text {

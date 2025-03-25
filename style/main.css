@@ -620,11 +620,15 @@ body {
 }
 .footer__container {
   display: flex;
-  justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 0px;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+  }
 }
 .footer__info {
   max-width: 300px;
@@ -632,12 +636,18 @@ body {
 .footer__logo {
   color: #2196f3;
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
   margin-bottom: 20px;
   display: inline-block;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 .footer__span {
   color: #fff;
@@ -679,6 +689,16 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer__listbox {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__listbox {
+    margin-left: 70px;
+  }
 }
 .footer__title {
   color: #fff;
@@ -724,14 +744,10 @@ body {
   flex-shrink: 0;
   fill: white;
 }
-.footer__subscribe {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 0px;
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: auto;
+  }
 }
 .footer__subscribe__title {
   color: #FFF;
@@ -741,11 +757,18 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  /* margin-left: 93px; */
 }
 .footer__form {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 .footer__input {
   width: 358px;
@@ -759,7 +782,7 @@ body {
   margin-right: 12px;
 }
 .footer__button {
-  width: 100%;
+  width: auto;
   height: 50px;
   display: flex;
   align-items: center;
@@ -774,7 +797,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   cursor: pointer;
-  flex-grow: 1;
+  flex-grow: unset;
 }
 .footer__text {
   color: #fff;
