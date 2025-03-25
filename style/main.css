@@ -16,7 +16,7 @@ img {
   display: block;
   max-width: 100%;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .container {
@@ -53,14 +53,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 21px 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 25px 0;
   }
 }
 .header__text {
@@ -209,7 +207,8 @@ body {
 
 .hero {
   background-color: #2f303a;
-  padding: 118px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/friends.jpg);
 }
@@ -232,6 +231,11 @@ body {
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__title {
     width: 360px;
@@ -253,7 +257,7 @@ body {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
-  padding: 10px 24px;
+  padding: 10px 32px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -274,7 +278,7 @@ body {
 }
 .management__list {
   display: flex;
-  gap: 30xp;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .management__item {
