@@ -8,8 +8,7 @@
     align-items: baseline;
     flex-wrap: wrap;
     justify-content: center;
-    // @include flex-box ($wrap:wrap, $align:baseline);
-    flex-direction: column;
+    flex-direction: column;  
     @media screen and (min-width: 768px){
       flex-direction: row;
     }
@@ -17,6 +16,12 @@
 
 &__info {
     max-width: 300px;
+    @media  screen and (min-width: 768px){
+      margin-left: 168px;
+    }
+    @media  screen and (min-width: 1200px){
+     margin-left: 70px;
+    }
 }
 
 &__logo {
@@ -78,12 +83,7 @@
     // align-items: center;
     text-align: center;
     @include flex-box ($direction:column);
-    @media screen and (min-width: 768px){
-      margin-left: 165px;
-    }
-    @media screen and (min-width: 768px){
-      margin-left:  70px;
-    }
+
   }
 
 &__title {
@@ -93,6 +93,8 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    
   }
 
 &__social-list {
@@ -134,14 +136,11 @@
     }
 
  &__subscribe {
-  // margin-left: auto;
       @media screen and (min-width: 1200px){
         margin-left: auto;
       }
-      // @media screen and (min-width: 768px){
-      //   margin-left: auto;
-      // }
-      &__title{
+
+      &__title {
         color: #FFF;
         font-size: 14px;
         font-weight: 700;
@@ -149,12 +148,9 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
-   
       
-  
-        }
     }
-
+  }
     &__form {
       display: flex;
       align-items: center; 

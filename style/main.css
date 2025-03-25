@@ -633,6 +633,16 @@ body {
 .footer__info {
   max-width: 300px;
 }
+@media screen and (min-width: 768px) {
+  .footer__info {
+    margin-left: 168px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__info {
+    margin-left: 70px;
+  }
+}
 .footer__logo {
   color: #2196f3;
   font-family: Raleway;
@@ -689,16 +699,6 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 0px;
-}
-@media screen and (min-width: 768px) {
-  .footer__listbox {
-    margin-left: 165px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__listbox {
-    margin-left: 70px;
-  }
 }
 .footer__title {
   color: #fff;
