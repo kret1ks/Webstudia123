@@ -425,6 +425,17 @@ body {
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .team {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    justify-content: center;
   }
 }
 .team__subject {
@@ -438,20 +449,24 @@ body {
 }
 .team__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .team__img {
   width: 270px;
   height: 260px;
 }
 .team__item {
-  padding-top: 30px;
-  padding-bottom: 30px;
   background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team__item:hover {
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12), 0px 4px 3px 0px rgba(0, 0, 0, 0.18);
 }
 .team__title {
   color: #212121;
@@ -482,9 +497,6 @@ body {
   margin-top: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   gap: 10px;
 }
 .team__icon {
@@ -501,6 +513,7 @@ body {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  margin-bottom: 30px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .team__box a:hover {
