@@ -428,16 +428,6 @@ body {
     justify-content: center;
   }
 }
-@media screen and (min-width: 480px) {
-  .team {
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team {
-    justify-content: center;
-  }
-}
 .team__subject {
   color: #212121;
   text-align: center;
