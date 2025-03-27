@@ -11,16 +11,18 @@
   }
 
   &__list {  
-    list-style-type: none; 
-    margin: 0;  
-    padding: 0;    
-    margin-bottom: 50px;  
-    justify-content: center;  
-    // gap: 8px;  
-    // flex-wrap: wrap;  
-    // display: flex;
-    @include flex-box ($gap:8px);
-  }  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;  
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column; // На мобільних все в стовпчик
+        align-items: center;
+        gap: 20px;
+    }
+}
+
 &__title{
   color: $text-color;
 font-size: 18px;
@@ -73,22 +75,32 @@ padding-bottom: 20px;
         // gap: 30px;
         @include flex-box ($gap:30px);
     }
-
     &__item {  
-        outline: 1px solid var(--border);  
-        flex-basis: calc((100% - 60px) / 3); 
-        box-sizing: border-box;
-        position: relative;  
-        overflow: hidden;  
-        transition: box-shadow 0.3s ease;
-        padding-bottom: 32px;
-        padding-top: 50px;
-        &:hover {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                        0px 4px 4px rgba(0, 0, 0, 0.06),
-                        1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
-    }
+      outline: 1px solid var(--border);  
+      box-sizing: border-box;
+      position: relative;  
+      overflow: hidden;  
+      transition: box-shadow 0.3s ease;
+      margin-bottom: 32px;
+      margin-top: 50px;
+      flex-basis: 100%; // За замовчуванням (мобільний)
+  
+      &:hover {
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                      0px 4px 4px rgba(0, 0, 0, 0.06),
+                      1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
+  
+      @media screen and (min-width: 768px) {
+          flex-basis: calc((100% - 30px) / 2); // Два в ряд на планшетах
+      }
+  
+      @media screen and (min-width: 1200px) {
+          flex-basis: calc((100% - 60px) / 3); // Три в ряд на великих екранах
+      }
+  }
+  
+    
 }
 
 
