@@ -17,7 +17,7 @@
     gap: 30px;  
 
     @media screen and (max-width: 767px) {
-        flex-direction: column; // На мобільних все в стовпчик
+        flex-direction: column; 
         align-items: center;
         gap: 20px;
     }
@@ -70,10 +70,13 @@ padding-bottom: 20px;
         padding: 0;
         margin: 0;
         list-style: none;
-        // display: flex;
-        // flex-wrap: wrap;
-        // gap: 30px;
-        @include flex-box ($gap:30px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      
+        @media screen and (max-width: 768px) {
+          justify-content: flex-start; // Вирівнюємо елементи по лівому краю
+        }
     }
     &__item {  
       outline: 1px solid var(--border);  
@@ -83,7 +86,7 @@ padding-bottom: 20px;
       transition: box-shadow 0.3s ease;
       margin-bottom: 32px;
       margin-top: 50px;
-      flex-basis: 100%; // За замовчуванням (мобільний)
+      flex-basis: 100%; 
   
       &:hover {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -92,11 +95,11 @@ padding-bottom: 20px;
       }
   
       @media screen and (min-width: 768px) {
-          flex-basis: calc((100% - 30px) / 2); // Два в ряд на планшетах
+          flex-basis: calc((100% - 30px) / 2); 
       }
   
       @media screen and (min-width: 1200px) {
-          flex-basis: calc((100% - 60px) / 3); // Три в ряд на великих екранах
+          flex-basis: calc((100% - 60px) / 3); 
       }
   }
   
@@ -112,8 +115,8 @@ padding-bottom: 20px;
   }
 
   &__img {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: auto;
     display: block;
   }
 

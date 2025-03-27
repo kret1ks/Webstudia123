@@ -1047,11 +1047,13 @@ body {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .btn .btn__list {
+    justify-content: flex-start;
+  }
 }
 .btn .btn__item {
   outline: 1px solid var(--border);
@@ -1083,8 +1085,8 @@ body {
   overflow: hidden;
 }
 .btn__img {
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: auto;
   display: block;
 }
 .btn__overlay {
