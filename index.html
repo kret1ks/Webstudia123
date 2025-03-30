@@ -24,6 +24,15 @@
     <div data-aos="zoom-out">
     <div class="container header__box">  
         <a href="./index.html" class="header__logo">Web<span class="header__span">Studio</span></a>
+
+
+        <button type="button" class="header__menu" data-menu-open>
+            <svg class="header__burger">
+                <use href="./img/symbol-defs.svg#icon-menu_burger"></use>
+            </svg>
+        </button>
+
+
         <nav class="header-nav">  
             <ul class="header__list">  
                 <li class="header__item-navigation"><a href="./index.html" class="nav-link ">Студія</a></li>  
@@ -49,6 +58,13 @@
                 </a>  
             </li>  
         </ul>  
+        <div class="menu is-hidden" data-menu>
+            <button type="button" class="menu__close">
+                <svg class="menu__icon">
+                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
     </div>  
 </div>
 </header> 
@@ -371,6 +387,7 @@
     </div>  
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
