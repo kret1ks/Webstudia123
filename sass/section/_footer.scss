@@ -5,7 +5,7 @@
 
   &__container {
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;  
@@ -16,12 +16,6 @@
 
 &__info {
     max-width: 300px;
-    @media  screen and (min-width: 768px){
-      margin-left: 168px;
-    }
-    @media  screen and (min-width: 1200px){
-     margin-left: 70px;
-    }
 }
 
 &__logo {
@@ -78,24 +72,30 @@
   }
   
   &__listbox {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    @include flex-box ($direction:column);
-
   }
 
-&__title {
+  &__title {
     color: $main-color;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
-
-    
+  
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-top: 0;
+    }
   }
+  
 
 &__social-list {
     // display: flex;
@@ -135,22 +135,35 @@
     fill: white;
     }
 
- &__subscribe {
-      @media screen and (min-width: 1200px){
-        margin-left: auto;
-      }
-
-      &__title {
-        color: #FFF;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.42px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-      
-    }
-  }
+    &__subscribe {  
+      @media screen and (min-width: 1200px) {  
+        margin-left: auto;  
+      }  
+    
+      &__title {  
+        color: #FFF;  
+        font-size: 14px;  
+        font-weight: 700;  
+        line-height: normal;  
+        letter-spacing: 0.42px;  
+        text-transform: uppercase;  
+        margin-bottom: 20px;  
+        @media screen and (min-width: 480px) {   
+          margin-top: 60px;  
+          text-align: center;  
+        }  
+        @media screen and (min-width: 768px) {   
+          margin-top: 60px;  
+          text-align: center;  
+        }  
+    
+        @media screen and (min-width: 1200px) {   
+          margin-top: 0;    
+          text-align: left;  
+        }  
+      }  
+    }  
+    
     &__form {
       display: flex;
       align-items: center; 
