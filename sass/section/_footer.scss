@@ -2,15 +2,19 @@
   background-color: $footer-background;
   padding-top: 60px;
   padding-bottom: 60px;
-
+  text-align: center;
+@media screen and (min-width: 1200px){
+  text-align: start;
+}
   &__container {
+    align-items: center;
     display: flex;
-    align-items: baseline;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;  
     @media screen and (min-width: 768px){
       flex-direction: row;
+      align-items: baseline;
     }
   }
 
@@ -72,10 +76,15 @@
   }
   
   &__listbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    margin-top: 60px;
+  
+  @media screen and (min-width : 768px) {
+    margin-left: 165px;
+    margin-top: 0;
+  }
+  @media screen and (min-width : 1200px) {
+    margin-left: 70px;
+  }
   }
 
   &__title {
@@ -84,7 +93,7 @@
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   
     // @media screen and (min-width: 768px) {
     //   text-align: center;
@@ -104,7 +113,6 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-left: 70px;
   }
 
   &__social-link {  
@@ -128,18 +136,30 @@
   }  
 
 
- &__icon {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    fill: white;
+  &__social {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+     &:hover {
+      background-color: $accent-color;
     }
+  }
 
     &__subscribe {  
+      margin-top: 60px;
       @media screen and (min-width: 1200px) {  
         margin-left: auto;  
+        margin-top: 0;
       }  
-    
+
+  
       &__title {  
         color: #FFF;  
         font-size: 14px;  
@@ -178,7 +198,7 @@
     }
 
     &__input{
-      width: 358px;
+      width: 100%;
       height: 50px;
       flex-shrink: 0;
       border-radius: 4px;
@@ -187,6 +207,12 @@
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
       /* margin-left: 93px; */
       margin-right: 12px;
+      @media screen and (min-width: 480px){
+        width: 450px;
+      }
+      @media screen and (min-width: 1200px){
+        width: 358px;
+      }
       }
       &__button {
         width: auto;
