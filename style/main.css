@@ -1047,13 +1047,8 @@ body {
 }
 
 .btn {
-  padding: 94px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .btn__container {
   max-width: 1200px;
@@ -1062,15 +1057,49 @@ body {
 }
 .btn__list {
   display: flex;
+  gap: 8px;
+  row-gap: 15px;
+  justify-content: start;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  margin-bottom: 40px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .btn__list {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn__list {
+    margin-bottom: 50px;
+  }
+}
+.btn__item {
+  outline: 1px solid var(--border);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 32px;
+  margin-top: 50px;
+  flex-basis: 100%;
+}
+.btn__item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 480px) {
+  .btn__item {
+    flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn__item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 .btn__title {
@@ -1118,29 +1147,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-}
-.btn .btn__item {
-  outline: 1px solid var(--border);
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  margin-bottom: 32px;
-  margin-top: 50px;
-  flex-basis: 100%;
-}
-.btn .btn__item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-@media screen and (min-width: 768px) {
-  .btn .btn__item {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .btn .btn__item {
-    flex-basis: calc((100% - 60px) / 3);
-  }
+  justify-content: center;
 }
 .btn__verybox {
   outline: 1px solid var(--border);
