@@ -14,6 +14,11 @@
 <header class="header">  
     <div class="container header__box">  
         <a href="./index.html" class="header__logo">Web<span class="header__span">Studio</span></a>  
+        <button type="button" class="header__menu" data-menu-open>
+            <svg class="header__burger">
+                <use href="../img/symbol-defs.svg#icon-menu_burger"></use>
+            </svg>
+        </button>
         <nav class="header-nav">  
             <ul class="header__list">  
                 <li class="header__item-navigation"><a href="../index.html" class="nav-link">Студія</a></li>  
@@ -27,7 +32,7 @@
                     <svg class="header__logotup">  
                         <use href="../img/symbol-defs.svg#icon-email"></use>  
                     </svg>  
-                    info@devstudio.com  
+                    <span class="header__text">info@devstudio.com </span>
                 </a>  
             </li>  
             <li class="header__item">  
@@ -35,16 +40,23 @@
                     <svg class="header__logotup">  
                         <use href="../img/symbol-defs.svg#icon-smartphone"></use>  
                     </svg>  
-                    +38 096 111 11 11  
+                    <span class="header__text">+38 096 111 11 11</span>
                 </a>  
             </li>  
         </ul>  
+        <div class="menu is-hidden" data-menu>
+            <button type="button" class="menu__close">
+                <svg class="menu__icon">
+                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
     </div>  
 </header> 
     <main>
         <!-- кнопка -->
         <section class="btn">  
-            <div class="btn__container">  
+            <div class="container btn__container">  
                 <ul class="btn__list">  
                     <li class="btn-item"><button type="button" class="btn__button">Усі</button></li>  
                     <li class="btn-item"><button type="button" class="btn__button">Веб-сайти</button></li>  
@@ -53,7 +65,7 @@
                     <li class="btn-item"><button type="button" class="btn__button">Маркетинг</button></li>  
                 </ul>  
                 
-                <ul class="btn__list">  
+                <ul class="btn__items">  
                     <li class="btn__item">  
                         <div class="btn__verybox">
                             <div class="table-img-wrapper">

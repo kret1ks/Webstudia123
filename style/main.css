@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   list-style: none;
   margin: 0;
@@ -83,19 +84,14 @@ body {
   line-height: 1.38;
   letter-spacing: 0.78px;
   margin-right: auto;
-  letter-spacing: 0.72;
 }
 @media screen and (min-width: 768px) {
   .header__logo {
-    font-size: 26px;
-    letter-spacing: 0.78;
     margin-right: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
-    font-size: 26px;
-    letter-spacing: 0.78;
     margin-right: 93px;
   }
 }
@@ -137,10 +133,7 @@ body {
 .header__item {
   fill: #757575;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   gap: 10px;
 }
 .header__item:hover {
@@ -195,9 +188,10 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__contact {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     gap: 10px;
+    align-items: flex-start; /* Вирівнює по лівому краю */
   }
 }
 @media screen and (min-width: 1200px) {
@@ -243,7 +237,7 @@ body {
 .menu__close:hover .backdrop__button, .menu__close:focus .backdrop__button {
   fill: #2196f3;
 }
-.menu__close {
+.menu__icon {
   width: 18px;
   height: 18px;
   fill: #000;
@@ -1156,7 +1150,17 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.btn__items {
   gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .btn__verybox {
