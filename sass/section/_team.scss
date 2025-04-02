@@ -32,7 +32,7 @@
   }  
 
   &__item {  
-    width: 100%;
+    
     background-color: $main-color;  
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),   
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14),   
@@ -40,13 +40,17 @@
                 border-radius: 0px 0px 4px 4px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;  
 
-    &:hover {  
-      box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15),   
-                  0px 2px 4px 0px rgba(0, 0, 0, 0.12),   
-                  0px 4px 3px 0px rgba(0, 0, 0, 0.18); 
-    }  
-
-
+    // &:hover {  
+    //   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15),   
+    //               0px 2px 4px 0px rgba(0, 0, 0, 0.12),   
+    //               0px 4px 3px 0px rgba(0, 0, 0, 0.18); 
+    // }  
+    @media screen and (min-width: 480px){
+      width: 450px;
+    }
+    @media screen and (min-width: 768px){
+      width: 354px;
+    }
     @media screen and (min-width: 1200px){
       width: 270px;
     }

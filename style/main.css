@@ -48,7 +48,7 @@ body {
 
 .header {
   padding-top: 32px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -489,14 +489,20 @@ body {
   width: 100%;
 }
 .team__item {
-  width: 100%;
   background-color: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.team__item:hover {
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12), 0px 4px 3px 0px rgba(0, 0, 0, 0.18);
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
@@ -1092,7 +1098,6 @@ body {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  outline: 1px solid red;
   transition: box-shadow 0.3s ease;
   flex-basis: 100%;
 }
