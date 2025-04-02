@@ -47,8 +47,8 @@ body {
 }
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 32px;
+  padding-bottom: 94px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -1064,23 +1064,27 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-.btn__list {
+.btn .btn__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
-  gap: 8px;
-  row-gap: 15px;
-  justify-content: start;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
-  .btn__list {
+  .btn .btn__list {
     justify-content: center;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .btn__list {
+  .btn .btn__list {
     margin-bottom: 50px;
+    justify-content: center;
   }
 }
 .btn__item {
@@ -1088,9 +1092,8 @@ body {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  outline: 1px solid red;
   transition: box-shadow 0.3s ease;
-  margin-bottom: 32px;
-  margin-top: 50px;
   flex-basis: 100%;
 }
 .btn__item:hover {
@@ -1149,16 +1152,6 @@ body {
   background-color: #2196f3;
   color: #fff;
 }
-.btn .btn__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 30px;
-}
 .btn__items {
   gap: 30px;
   padding: 0;
@@ -1166,7 +1159,12 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1200px) {
+  .btn__items {
+    justify-content: center;
+  }
 }
 .btn__verybox {
   outline: 1px solid var(--border);
