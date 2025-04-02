@@ -28,11 +28,11 @@
   }  
 
   &__img {  
-    width: 270px;  
-    height: 260px;  
+   width: 100%;
   }  
 
   &__item {  
+    width: 100%;
     background-color: $main-color;  
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),   
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14),   
@@ -45,6 +45,11 @@
                   0px 2px 4px 0px rgba(0, 0, 0, 0.12),   
                   0px 4px 3px 0px rgba(0, 0, 0, 0.18); 
     }  
+
+
+    @media screen and (min-width: 1200px){
+      width: 270px;
+    }
   }  
 
   &__title {  
