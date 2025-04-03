@@ -1,6 +1,6 @@
 .header {
-  padding-top: 32px;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media screen and (min-width: 768px) {
     padding: 21px 0;
@@ -25,6 +25,7 @@
   &__box {
     display: flex;
     align-items: center;
+    
   }
 
   &__logo {
