@@ -47,8 +47,7 @@ body {
 }
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -1059,8 +1058,8 @@ body {
 }
 
 .btn {
-  padding-top: 94px;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .btn__container {
   max-width: 1200px;
