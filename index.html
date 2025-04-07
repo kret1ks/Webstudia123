@@ -134,7 +134,12 @@
                 <h2 class="team__subject">Наша команда</h2>
                 <ul class="team__list">
                     <div class="team__item">
-                        <img src="./img/ihordemyanenko.webp" alt="Ігор Дем'яненко" class="team__img">
+                        <picture>
+                            <source srcset="./img/desktop/igor-desktop@1x.webp 1x, ./img/desktop/igor-desktop@2x.webp 2x" media="(min-width:1200px)">
+                            <source srcset="./img/tablet/igor-tablet@1x.webp 1x, ./img/tablet/igor-tablet@2x.webp 2x" media="(min-width:768px)">
+                            <source srcset="./img/mobile/igor-mobile@1x.webp 1x ./img/mobile/igor-mobile@2x.webp 2x," media="(max-width:767px)">
+                            <img src="./img/ihordemyanenko.webp" alt="Ігор Дем'яненко" class="team__img">
+                        </picture>
                         <div class="div__item">
                             <h3 class="team__title">Ігор Дем'яненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -155,7 +160,12 @@
                         </div>
                         </div>
                     <li class="team__item">
-                        <img src="./img/olgarepina.webp" alt="Ольга Рєпіна" class="team__img">
+                        <picture>
+                            <source srcset="./img/desktop/olga-desktop@1x.webp 1x, ./img/desktop/olga-desktop@2x.webp 2x" media="(min-width:1200px)">
+                            <source srcset="./img/tablet/olga-tablet@1x.webp 1x, ./img/tablet/olga-tablet@2x.webp 2x" media="(min-width:768px)">
+                            <source srcset="./img/mobile/olga-mobile@1x.webp 1x, ./img/mobile/olga-mobile@2x.webp 2x" media="(max-width:767px)">
+                            <img src="./img/olgarepina.webp" alt="Ольга Рєпіна" class="team__img">
+                        </picture>
                         <div class="div__item">
                             <h3 class="team__title">Ольга Рєпіна</h3>
                             <p class="team__text">Frontend Developer</p>
