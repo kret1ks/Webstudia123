@@ -107,6 +107,8 @@ width: 360px;
       padding: 10px 32px;
       border: none; 
       cursor: pointer;
+      position: relative;  /* Залиште або змініть на absolute, якщо потрібно */  
+      z-index: 10;
       transition: all 0.3s ease; 
 
       @media screen and (min-width: 1200px){

@@ -210,14 +210,16 @@ body {
 }
 
 .menu {
+  position: fixed; /* Зберігає бургер-меню у верхній частині */
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+  background-color: #fff; /* Встановіть свій фон */
+  z-index: 100; /* Вищий z-index, щоб перекривати інші елементи */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   padding: 48px 0 48px 40px;
-  position: fixed;
   top: 0;
   left: 0;
+  display: none; /* Приховати за замовчуванням */
 }
 .menu__close {
   position: absolute;
@@ -328,6 +330,8 @@ body {
   padding: 10px 32px;
   border: none;
   cursor: pointer;
+  position: relative; /* Залиште або змініть на absolute, якщо потрібно */
+  z-index: 10;
   transition: all 0.3s ease;
 }
 @media screen and (min-width: 1200px) {
