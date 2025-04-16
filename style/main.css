@@ -209,16 +209,16 @@ body {
 }
 
 .menu {
-  opacity: 1;
+  width: 100vw;
+  height: 100vh;
   background-color: #fff;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
   padding: 48px 0 48px 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  z-index: 1000;
+  overflow-y: auto;
 }
 .menu__close {
   position: absolute;
@@ -258,9 +258,16 @@ body {
   letter-spacing: 0.8px;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .is-hidden {
   pointer-events: none;
   opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
 }
 
 .hero {
